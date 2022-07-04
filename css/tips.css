@@ -1,0 +1,21 @@
+h1 {
+    font-size: 50px;
+    font-family: 'Moon Dance';
+    color: rgba(255, 0, 234, 0.822);
+    background-color: rgb(255, 227, 247);
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Jura', sans-serif;
+    color: rgba(219, 18, 129, 0.822);
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    word-spacing: 4px
+}
+
+ul li {
+    font-size: 20px;
+    color: rgb(156, 21, 89);
+}

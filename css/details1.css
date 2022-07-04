@@ -1,0 +1,16 @@
+h1 {
+    font-size: 50px;
+    font-family: 'David Libre', serif;
+    color: rgba(22, 40, 207, 0.822);
+    background-color: rgb(195, 195, 236);
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'David Libre', serif;
+    color: rgba(0, 6, 63, 0.822);
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    word-spacing: 4px
+}

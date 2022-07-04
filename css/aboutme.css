@@ -1,0 +1,18 @@
+h1 {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    color: rgba(19, 0, 88, 0.822);
+    background-color: rgb(123, 213, 255);
+    text-align: center;
+    font-weight: 700;
+    font-style: bold;
+}
+
+p {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    color: rgba(15, 0, 71, 0.822);
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    word-spacing: 4px
+}
