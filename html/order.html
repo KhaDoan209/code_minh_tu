@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/form.css">
+    <script src="/order.js"></script>
+</head>
+
+<body>
+
+    <h1>Order Form</h1>
+    <div class="container">
+        <!-- Create Form -->
+        <div id="form" onsubmit="return false">
+            <!-- Details -->
+            <div class="form-control">
+                <label class="label" for="cake" id="label-cake">
+               Cake name: 
+            </label>
+                <!-- Dropdown Menu -->
+                <select id="cakeList">  
+            <option> --- Select cake --- </option>  
+            <option>Classic Yellow Cake </option>  
+            <option>Coconut Bundt Cake </option>  
+            <option> Cream Cheese Pound Cake </option>  
+            <option> German Chocolate Cake </option>  
+        </select>
+            </div>
+
+            <span id="error-cake"></span>
+
+            <div class="form-control">
+
+                <label for="name" id="label-name">
+                Your name
+            </label>
+                <!-- Input Type Email-->
+                <input type="text" id="name" placeholder="Enter your name" />
+                <span id="error-name"></span>
+            </div>
+
+
+            <div class="form-control">
+
+                <label for="message" id="label-message">
+                Message:
+            </label>
+
+                <input type="text" id="message" placeholder="Enter the message on cake" />
+            </div>
+            <span id="error-message"></span>
+
+            <div class="form-control">
+                <label for="item" id="label-item">
+                Includes:
+         </label>
+                <ul>
+                    <input type="checkbox" id="include1" name="" value="">
+                    <label for="include1"> Candle</label><br>
+                    <input type="checkbox" id="include2" name="" value="">
+                    <label for="include2"> Firework</label><br>
+                    <input type="checkbox" id="include3" name="" value="">
+                    <label for="include3"> Toys</label><br>
+                </ul>
+            </div>
+            <!-- Delivery Date -->
+
+
+            <div class="form-control">
+                <label for="date" id="label-date">
+                Deliver date:
+         </label>
+                <input type="date" id="delivery-date" name="delivery-date">
+            </div>
+            <span id="error-deli-date"></span>
+
+
+
+            <!-- Call  -->
+            <div class="form-control">
+                <label for="address" id="label-address">
+        Deliver to:
+         </label>
+                <textarea type="text" id="delivery-address" name="delivery-address" rows="5" cols="20"></textarea>
+            </div>
+            <span id="error-deli-address"></span>
+
+            <div class="form-control">
+                <label for="call" id="label-call">      	
+        Call before deliver?
+         </label>
+                <ul>
+                    <input type="radio" id="call-yes" name="call" value="call-yes">
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="call-no" name="call" value="call-no" checked>
+                    <label for="no">No</label><br>
+                </ul>
+            </div>
+
+            <!-- Submit Form -->
+
+            <button type="input" onclick="validateFormOrder()" value="submit">Order now
+        </button>
+        </div>
+    </div>
+</body>
+
+
+</html>

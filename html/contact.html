@@ -1,70 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="/contact.js"></script>
+    <link rel="stylesheet" href="/css/form.css">
     <title>Document</title>
 </head>
-  
-<body>
-    
-    <h1>Contact Form</h1>
-  
-    <!-- Create Form -->
-    <form id="form">
- 
-        <!-- Details -->
-        <div class="form-control">
-            <label for="name" id="label-name">
-               Your Name
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="name"
-                   placeholder="Enter your name" />
-        </div>
-  
-        <div class="form-control">
-            <label for="email" id="label-email">
-                Your Email
-            </label>
- 
-            <!-- Input Type Email-->
-            <input type="email"
-                   id="email"
-                   placeholder="Enter your email" />
-        </div>
-  
 
-        <div class="form-control">
-            <label for="age" id="label-age">
-                Your Subject
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="age"
-                   placeholder="Enter the subject" />
+<body>
+
+
+    <div class="container">
+        <div class="contact-title">
+            <h1>Contact Form </h1>
+            <img src="https://tinyurl.com/5ceh7r8a">
         </div>
-        
-        <div class="form-control">
-            <label for="age" id="label-age">
+
+
+        <!-- Create Form -->
+        <form id="form" onsubmit="return false">
+            <!-- Details -->
+            <div class="form-control">
+                <ul>
+                    <li class="input-title"><label class="label" for="name" id="label-name">
+               Your Name
+            </label> </li>
+                    <!-- Input Type Text -->
+                    <li><input type="text" id="name" placeholder="Enter your name" /> </li>
+                </ul>
+
+
+            </div>
+            <span class="error" id="error-name"></span>
+
+
+
+            <div class="form-control">
+                <ul>
+                    <li class="input-title"><label class="label" for="email" id="label-email"> Your Email</label> </li>
+                    <!-- Input Type Email-->
+                    <li><input type="email" id="email" placeholder="Enter your email" /></li>
+                </ul>
+
+            </div>
+            <span class="error" id="error-email"></span>
+
+            <div class="form-control">
+                <ul>
+                    <li class="input-title"><label class="label" for="subject" id="label-subject">
+                Your Subject
+                    </label></li>
+
+                    <!-- Input Type Text -->
+                    <li> <input type="text" id="subject" placeholder="Enter the subject"></li>
+
+                </ul>
+            </div>
+            <span class="error" id="error-subject"></span>
+
+            <div class="form-control">
+                <ul>
+                    <li class="input-title"><label class="label" for="message" id="label-message">
                 Your Message
-            </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="age"
-                   placeholder="Enter your message to us" />
-        </div>      
-  
-        <!-- Multi-line Text Input Control -->
-        <button type="input" onclick="validateForm()" value="submit">
-            Submit
-        </button>
-    </form>
+            </label></li>
+
+                    <!-- Input Type Text -->
+                    <li><textarea type="text" id="message" placeholder="Enter your message to us" rows="5" cols="20"></textarea></li>
+                </ul>
+            </div>
+
+            <span class="error" id="error-mess"></span>
+            <!-- Multi-line Text Input Control -->
+            <div class="form-control">
+                <ul>
+                    <button type="input" onclick="validateFormContact()" value="submit">Send message
+                    </button>
+                </ul>
+            </div>
+
+        </form>
+
+
+
+    </div>
 </body>
+
 </html>

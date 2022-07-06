@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+html {
+    background-image: linear-gradient(145deg, #ede0d4 0%, #e6ccb2 50%, #ddb892 100%);
+    min-height: 100%;
+    font-size: 1vw;
+}
+
+.container {
+    display: flex;
+    margin: 2.5% 22%;
+    padding: 2.5% 2.5%;
+    width: 50%;
+    height: 100%;
+    background-color: #FAF8DE;
+    box-shadow: 0px 10px 5px 0px #888888;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form {
+    padding-top: 7%;
+    margin-left: 15%;
+    width: 55%;
+}
+
+.form-control {
+    margin: 2.5% 5%;
+    font-size: 1.5vw;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.input-title {
+    margin-bottom: 1.5%;
+}
+
+.label {
+    color: #9D7E67;
+    font-size: 1.5vw;
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
+}
+
+.error {
+    margin: 0.5%;
+    margin-left: 8%;
+    padding: 0.5% 2%;
+    color: #ffff;
+    border-radius: 5px;
+}
+
+input {
+    height: 2vw;
+}
+
+textarea {
+    border-width: 2px;
+}
+
+input,
+textarea {
+    width: 65%;
+    border-radius: 9px;
+    border-color: #f5deb3;
+    transition: width 1s ease-in-out;
+    border-style: solid;
+}
+
+input:focus,
+textarea:focus {
+    outline: none !important;
+    width: 100%;
+    border-color: #9D7E67;
+}
+
+h1 {
+    width: 100%;
+    color: #9D7E67;
+    word-wrap: break-word;
+    font-size: 4vw;
+    font-family: 'Rubik Moonrocks', cursive;
+    padding-bottom: 15%;
+}
+
+img {
+    width: 80%;
+    height: 10%;
+    object-fit: cover;
+}
+
+.contact-title {
+    margin-left: 10%;
+    width: 45%;
+    display: block;
+}
+
+button {
+    padding: 3% 6%;
+    margin-bottom: 10%;
+    border: solid 2px;
+    border-color: #9D7E67;
+    background-color: #f5deb3;
+    color: #7B3F00;
+    border-radius: 16px;
+    font-size: 1vw;
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
+    margin-left: 10%;
+}
+
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(90deg, #ede0d4 50%, #e6ccb2 100%);
+    animation: slidebg 5s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 40vw;
+    }
+}
