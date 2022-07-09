@@ -3,10 +3,12 @@
             color: rgb(0, 84, 163);
             font-weight: 600;
             font-size: 300%;
-            position: absolute;
-            top: 100px;
-            left: 40px;
-            background: rgba(127, 173, 243, 0.582);
+            background-color: rgba(127, 173, 243, 0.582);
+            position: relative;
+            bottom: 300px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: -1;
         }
         
         p {
@@ -27,7 +29,6 @@
             width: 120px;
             height: 40px;
             line-height: 40px;
-            margin-left: -5px;
             font-size: 20px;
             position: relative;
         }
@@ -57,4 +58,12 @@
         
         .sub-menu:hover ul {
             display: block;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .cover-image{
+            max-width: 100%;
         }

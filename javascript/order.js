@@ -21,7 +21,9 @@ function validateFormOrder() {
 function cakeSelectCheck() {
     var cake = document.getElementById("cakeList");
     var error = document.getElementById("error-cake");
-    if (cake.value == "------------ Select cake ------------") {
+
+    
+    if (cake.value == "------------ Select Blog Type ------------") {
         error.textContent = "Please select our product.";
         error.style.backgroundColor = "#D0342C";
 

@@ -1,5 +1,6 @@
 function validateFormContact() {
     let correct = true;
+
     var name = nameCheck();
     var email = emailCheck();
     var subject = subjectCheck();
@@ -10,6 +11,7 @@ function validateFormContact() {
         return false;
 
     } else {
+
         alert("Message sent successfully");
         return true;
     }
