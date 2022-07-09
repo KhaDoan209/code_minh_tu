@@ -33,6 +33,7 @@ function nameCheck() {
     } else
 
         error.textContent = "";
+    error.style.backgroundColor = "white";
 
 
     return true;
@@ -59,7 +60,7 @@ function emailCheck() {
         return false;
     } else
         error.textContent = "";
-
+    error.style.backgroundColor = "white";
     return true
 }
 
@@ -83,7 +84,7 @@ function subjectCheck() {
         return false;
     } else
         error.textContent = "";
-
+    error.style.backgroundColor = "white";
     return true
 
 }
@@ -103,7 +104,7 @@ function messageCheck() {
         return false;
     } else
         error.textContent = "";
-
+    error.style.backgroundColor = "white";
     return true
 
 }

@@ -1,9 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
 html {
-    background-image: linear-gradient(145deg, #ede0d4 0%, #e6ccb2 50%, #ddb892 100%);
     min-height: 100%;
     font-size: 1vw;
+    background-image: linear-gradient(145deg, #ede0d4 0%, #e6ccb2 50%, #ddb892 100%);
+    animation: slidebg 2s alternate-reverse infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .container {
@@ -12,16 +14,23 @@ html {
     padding: 2.5% 2.5%;
     width: 50%;
     height: 100%;
-    background-color: #FAF8DE;
+    background-color: #ffff;
     box-shadow: 0px 10px 5px 0px #888888;
     justify-content: space-between;
     align-items: center;
+    border-radius: 26px;
 }
 
 #form {
     padding-top: 7%;
+    margin-left: 10%;
+    width: 50%;
+}
+
+#formOrder {
+    padding-top: 7%;
     margin-left: 15%;
-    width: 55%;
+    width: 65%;
 }
 
 .form-control {
@@ -48,7 +57,7 @@ ul {
 
 .error {
     margin: 0.5%;
-    margin-left: 8%;
+    margin-left: 15%;
     padding: 0.5% 2%;
     color: #ffff;
     border-radius: 5px;
@@ -62,20 +71,81 @@ textarea {
     border-width: 2px;
 }
 
+#cakeList {
+    height: 2vw;
+    width: 100%;
+    border-radius: 9px;
+    border-width: 2px;
+    border-color: #f5deb3;
+    border-style: solid;
+    color: #7B3F00;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 0.9vw;
+}
+
+#cakeList:hover {
+    cursor: pointer;
+}
+
+#cakeList:focus {
+    outline: none !important;
+    border-color: #9D7E67;
+}
+
 input,
 textarea {
-    width: 65%;
+    width: 100%;
     border-radius: 9px;
     border-color: #f5deb3;
-    transition: width 1s ease-in-out;
+    transition: width 0.5s ease-in-out;
     border-style: solid;
 }
 
 input:focus,
 textarea:focus {
     outline: none !important;
-    width: 100%;
     border-color: #9D7E67;
+}
+
+.item {
+    display: block;
+}
+
+.item-check {
+    width: 6%;
+    transition: none;
+    height: 1vw;
+    margin-top: 2%;
+    margin-left: 5%;
+    color: #7B3F00;
+}
+
+.item-check:hover {
+    cursor: pointer;
+}
+
+.item-check:focus {
+    width: 6%;
+}
+
+.item-text {
+    color: #9D7E67;
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
+    font-size: 1.3vw;
+}
+
+#delivery-date {
+    width: 100%;
+    border-radius: 9px;
+    border-width: 2px;
+    border-color: #f5deb3;
+    border-style: solid;
+    color: #7B3F00;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2vw;
 }
 
 h1 {
@@ -88,19 +158,40 @@ h1 {
 }
 
 img {
-    width: 80%;
-    height: 10%;
+    width: 100%;
     object-fit: cover;
+    height: 18vw;
+}
+
+.fa-regular {
+    color: #9D7E67;
+    font-size: 100px;
 }
 
 .contact-title {
-    margin-left: 10%;
-    width: 45%;
+    margin-left: 5%;
+    width: 60%;
     display: block;
+    min-height: fit-content;
+}
+
+.radio-option {
+    width: 6%;
+}
+
+.radio-option:focus {
+    width: 6%;
+}
+
+.radio-text {
+    color: #9D7E67;
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
+    font-size: 1.5vw;
 }
 
 button {
-    padding: 3% 6%;
+    padding: 3% 2%;
     margin-bottom: 10%;
     border: solid 2px;
     border-color: #9D7E67;
@@ -116,11 +207,26 @@ button {
 button:hover {
     cursor: pointer;
     background-image: linear-gradient(90deg, #ede0d4 50%, #e6ccb2 100%);
-    animation: slidebg 5s linear infinite;
+    animation: slidebtn 5s linear infinite;
 }
 
-@keyframes slidebg {
+@keyframes slidebtn {
     to {
         background-position: 40vw;
     }
+}
+
+.order-title {
+    font-size: 5vw;
+    margin-bottom: 30%;
+}
+
+.order-img {
+    margin-bottom: 35%;
+    height: 60vh;
+    width: 20vw;
+}
+
+i {
+    font-size: 2vw;
 }

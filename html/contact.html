@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="/contact.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="/css/form.css">
     <title>Document</title>
 </head>
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="contact-title">
             <h1>Contact Form </h1>
-            <img src="https://tinyurl.com/5ceh7r8a">
+            <img src="https://tinyurl.com/2p8a6c8x">
         </div>
 
 
@@ -26,7 +26,8 @@
             <!-- Details -->
             <div class="form-control">
                 <ul>
-                    <li class="input-title"><label class="label" for="name" id="label-name">
+                    <li class="input-title">
+                        <label class="label" for="name" id="label-name"><i class="fa-solid fa-file-signature"></i>
                Your Name
             </label> </li>
                     <!-- Input Type Text -->
@@ -41,7 +42,7 @@
 
             <div class="form-control">
                 <ul>
-                    <li class="input-title"><label class="label" for="email" id="label-email"> Your Email</label> </li>
+                    <li class="input-title"><label class="label" for="email" id="label-email"><i class="fa-solid fa-envelope"></i> Your Email</label> </li>
                     <!-- Input Type Email-->
                     <li><input type="email" id="email" placeholder="Enter your email" /></li>
                 </ul>
@@ -51,9 +52,7 @@
 
             <div class="form-control">
                 <ul>
-                    <li class="input-title"><label class="label" for="subject" id="label-subject">
-                Your Subject
-                    </label></li>
+                    <li class="input-title"><label class="label" for="subject" id="label-subject"><i class="fa-solid fa-code"></i> Your Subject</label></li>
 
                     <!-- Input Type Text -->
                     <li> <input type="text" id="subject" placeholder="Enter the subject"></li>
@@ -64,7 +63,7 @@
 
             <div class="form-control">
                 <ul>
-                    <li class="input-title"><label class="label" for="message" id="label-message">
+                    <li class="input-title"><label class="label" for="message" id="label-message"><i class="fa-solid fa-message"></i>
                 Your Message
             </label></li>
 
@@ -76,7 +75,10 @@
             <span class="error" id="error-mess"></span>
             <!-- Multi-line Text Input Control -->
             <div class="form-control">
+
                 <ul>
+                    <button type="input" onclick="document.location='Assignment 2 - Option 1.html'">Go Back
+                    </button>
                     <button type="input" onclick="validateFormContact()" value="submit">Send message
                     </button>
                 </ul>

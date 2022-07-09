@@ -21,13 +21,14 @@ function validateFormOrder() {
 function cakeSelectCheck() {
     var cake = document.getElementById("cakeList");
     var error = document.getElementById("error-cake");
-    if (cake.value == "--- Select cake ---") {
+    if (cake.value == "------------ Select cake ------------") {
         error.textContent = "Please select our product.";
-        error.style.color = "white";
+        error.style.backgroundColor = "#D0342C";
 
         return false;
     } else
         error.textContent = "";
+    error.style.backgroundColor = "white";
     return true;
 }
 
@@ -37,15 +38,15 @@ function nameCheck() {
 
     if (name.value.length == "") {
         error.textContent = "Please fill out your name.";
-        error.style.color = "red";
-        errorStyle(error);
+        error.style.backgroundColor = "#D0342C";
         return false;
     } else if (name.value.length > 100) {
         error.textContent = "Your name should not exceed 100 characters.";
-        error.style.color = "red";
+        error.style.backgroundColor = "#D0342C";
         return false;
     } else
         error.textContent = "";
+    error.style.backgroundColor = "white";
     return true;
 }
 
@@ -55,10 +56,10 @@ function messageCheck() {
 
     if (mess.value.length > 30) {
         error.textContent = "Message should not exceed 30 characters";
-        error.style.color = "red";
+        error.style.backgroundColor = "#D0342C";
         return false;
     } else error.textContent = "";
-
+    error.style.backgroundColor = "white";
     return true;
 }
 
@@ -69,10 +70,10 @@ function deliverDateCheck() {
 
     if (deliverDate.value == "") {
         error.textContent = "Please choose a delivery date";
-        error.style.color = "red";
+        error.style.backgroundColor = "#D0342C";
         return false;
     } else error.textContent = "";
-
+    error.style.backgroundColor = "white";
     return true;
 }
 
@@ -82,13 +83,15 @@ function deliverAddressCheck() {
 
     if (deliverAddress.value == "") {
         error.textContent = "Please fill out the address.";
-        error.style.color = "red";
+        error.style.backgroundColor = "#D0342C";
         return false;
+
     } else if (deliverAddress.value.length > 500) {
         error.textContent = "Address should not exceed 500 characters.";
-        error.style.color = "red";
+        error.style.backgroundColor = "#D0342C";
         return false;
-    } else error.textContent = "";
 
+    } else error.textContent = "";
+    error.style.backgroundColor = "white";
     return true;
 }
